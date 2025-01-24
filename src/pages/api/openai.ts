@@ -28,7 +28,7 @@ export default async function handler(
         max_tokens: 500, // Adjust as necessary
       });
       const theResponse = completion.choices[0].message;
-      console.log(theResponse);
+      // console.log(theResponse);
       return res.status(200).json({ output: theResponse });
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {

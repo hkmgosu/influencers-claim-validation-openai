@@ -9,7 +9,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             const images = await getFlickrImages(query.term as string);
             res.status(200).json(images);
         } catch (error) {
-            res.status(500).json({ message: 'Error fetching images' });
+            res.status(500).json({ message: 'Error fetching images', description: error });
         }
     } else {
         res.status(400).json({ message: 'Invalid request' });
