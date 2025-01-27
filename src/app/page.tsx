@@ -109,12 +109,14 @@ const Home = () => {
               />
             )) */}
           </div>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: response.split("\n").slice(1, -1).join("\n"),
-            }}
-            className="w-100 md:w-70 lg:w-70"
-          />
+          <div className="flex items-start justify-center min-h-screen">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: response.split("\n").slice(1, -1).join("\n"),
+              }}
+              className="max-w-6xl w-full"
+            />
+          </div>
         </div>
       )}
     </div>
