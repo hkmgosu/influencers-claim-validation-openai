@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div className="justify-items-center">
       <h1 className="dark:text-white pt-4">
-        Verify Influencersusing OpenAI by Newenlabs.dev
+        Verify Influencers using OpenAI, by Newenlabs.dev
       </h1>
       <br />
       <form onSubmit={handleSubmit}>
